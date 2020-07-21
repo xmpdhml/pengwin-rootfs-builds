@@ -52,7 +52,7 @@ sudo chroot rootfs/ /bin/bash -c "echo 'Defaults lecture_file = /etc/sudoers.lec
 sudo chroot rootfs/ /bin/bash -c "echo 'Enter your UNIX password below. This is not your Windows password.' > /etc/sudoers.lecture"
 
 echo 'Clean up apt cache'
-sudo chroot rootfs/ apt-get -y -q remove systemd dmidecode --allow-remove-essential
+#sudo chroot rootfs/ apt-get -y -q remove systemd dmidecode --allow-remove-essential
 sudo chroot rootfs/ apt-get -y -q autoremove
 sudo chroot rootfs/ apt-get -y -q clean
 

@@ -46,7 +46,7 @@ sudo chroot rootfs/ apt-get -y -q update
 sudo chroot rootfs/ apt-get -y -q upgrade
 
 echo 'Clean up apt cache'
-sudo chroot rootfs/ apt-get -y -q remove systemd dmidecode --allow-remove-essential
+#sudo chroot rootfs/ apt-get -y -q remove systemd dmidecode --allow-remove-essential
 sudo chroot rootfs/ apt-get -y -q autoremove
 sudo chroot rootfs/ apt-get -y -q autoclean
 sudo chroot rootfs/ apt-get -y -q clean
